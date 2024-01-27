@@ -1,6 +1,6 @@
 .container {
-    width: 300px;
-    margin: 40px auto;
+    width: 500px;
+    margin: 0px auto;
     padding: 15px;
     outline: 1px solid red;
 }
@@ -17,28 +17,28 @@ flex-basis: 100px;
 
 .item:nth-child(1) {
     background-color: red;
-    flex-grow: 1;
+    flex-basis: 50%;
     order: -2;
 }
 
 .item:nth-child(2){
     background-color: blue ;
-    flex-grow: 0;
+    flex-basis: 33,3%;
     order: 2;
 }
 .item:nth-child(3) {
     background-color: purple ;
-    flex-grow: 0;
+    flex-basis: 33,3%;
     order: 1;
 }
 .item:nth-child(4) {
     background-color: green;
-    flex-grow: 0;
+    flex-basis: 33,3%;
     order: 3;
 }
 .item:nth-child(5) {
     background-color: yellow;
-    flex-grow: 1;
+    flex-basis: 50%;
     order: -1;
 }
 
