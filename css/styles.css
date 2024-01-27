@@ -1,45 +1,46 @@
 .container {
-    width: 500px;
-    margin: 0px auto;
-    padding: 15px;
-    outline: 1px solid red;
+   display: flex;
+   justify-content: center;
+   margin: 100px;
 }
 
 .holder {
     display: flex;
     flex-wrap: wrap;
+    width: 1000px;
+    outline:5px solid black;
 }
 
 .item {
-border: 1px solid blue;
-flex-basis: 100px;
+font-size: 150px;
+text-align: center;
 }
 
-.item:nth-child(1) {
+.holder .item:nth-child(1) {
     background-color: red;
     flex-basis: 50%;
-    order: -2;
-}
-
-.item:nth-child(2){
-    background-color: blue ;
-    flex-basis: 33,3%;
-    order: 2;
-}
-.item:nth-child(3) {
-    background-color: purple ;
-    flex-basis: 33,3%;
     order: 1;
 }
-.item:nth-child(4) {
-    background-color: green;
+
+.holder .item:nth-child(2){
+    background-color: blue ;
+    flex-basis: 33,3%;
+    order: 4;
+}
+.holder .item:nth-child(3) {
+    background-color: purple ;
     flex-basis: 33,3%;
     order: 3;
 }
-.item:nth-child(5) {
+.holder .item:nth-child(4) {
+    background-color: green;
+    flex-basis: 33,3%;
+    order: 5;
+}
+.holder .item:nth-child(5) {
     background-color: yellow;
     flex-basis: 50%;
-    order: -1;
+    order: 2;
 }
 
 
